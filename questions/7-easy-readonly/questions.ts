@@ -1,6 +1,8 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
-type MyReadonly<T> = any
+type MyReadonly<T> = {
+  +readonly [K in keyof T]: T[K];
+}
 
 type cases = [
   Expect<Equal<MyReadonly<Todo1>, Readonly<Todo1>>>,

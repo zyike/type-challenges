@@ -1,6 +1,6 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
-type KebabCase<S> = any;
+type KebabCase<S> = any
 
 type cases = [
   Expect<Equal<KebabCase<'FooBarBaz'>, 'foo-bar-baz'>>,

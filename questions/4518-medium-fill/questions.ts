@@ -6,7 +6,6 @@ type Fill<  T extends unknown[],
   End extends number = T['length'],
 > = any
 
-
 type cases = [
   Expect<Equal<Fill<[], 0>, []>>,
   Expect<Equal<Fill<[], 0, 0, 3>, []>>,

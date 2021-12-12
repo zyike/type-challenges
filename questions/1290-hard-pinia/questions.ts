@@ -10,7 +10,7 @@ const store = defineStore({
   }),
   getters: {
     stringifiedNum() {
-      // @ts-expect-error
+      
       this.num += 1
 
       return this.num.toString()
@@ -30,7 +30,7 @@ const store = defineStore({
     reset() {
       this.num = 0
 
-      // @ts-expect-error
+      
       this.parsedNum = 0
 
       return true
@@ -41,20 +41,20 @@ const store = defineStore({
   },
 })
 
-// @ts-expect-error
+
 store.nopeStateProp
-// @ts-expect-error
+
 store.nopeGetter
-// @ts-expect-error
+
 store.stringifiedNum()
 store.init()
-// @ts-expect-error
+
 store.init(0)
 store.increment()
 store.increment(2)
-// @ts-expect-error
+
 store.setNum()
-// @ts-expect-error
+
 store.setNum('3')
 store.setNum(3)
 const r = store.reset()

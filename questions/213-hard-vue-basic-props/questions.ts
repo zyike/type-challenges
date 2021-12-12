@@ -24,13 +24,13 @@ VueBasicProps({
       Expect<Equal<PropsType['propF'], RegExp>>,
     ]
 
-    // @ts-expect-error
+    
     this.firstname
-    // @ts-expect-error
+    
     this.getRandom()
-    // @ts-expect-error
+    
     this.data()
-  
+
     return {
       firstname: 'Type',
       lastname: 'Challenges',

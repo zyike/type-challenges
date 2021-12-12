@@ -1,16 +1,15 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
-type ControlsMap = {  c: 'char',
-  s: 'string',
-  d: 'dec',
-  o: 'oct',
-  h: 'hex',
-  f: 'float',
-  p: 'pointer',
+type ControlsMap = {  c: 'char'
+  s: 'string'
+  d: 'dec'
+  o: 'oct'
+  h: 'hex'
+  f: 'float'
+  p: 'pointer'
 }
 
 type ParsePrintFormat = any
-
 
 type cases = [
   Expect<Equal<ParsePrintFormat<''>, []>>,

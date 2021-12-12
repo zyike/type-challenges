@@ -1,6 +1,8 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
-type DeepReadonly<T> = any
+type DeepReadonly<T> = {
+  readonly [K in keyof T]: T[K] extends Function ? T[K] : T[K] extends object ? DeepReadonly<T[K]> : T[K]
+}
 
 type cases = [
   Expect<Equal<DeepReadonly<X>, Expected>>,

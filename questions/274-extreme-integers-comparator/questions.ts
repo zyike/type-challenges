@@ -7,7 +7,6 @@ enum Comparison {  Greater,
 
 type Comparator<A extends number, B extends number> = any
 
-
 type cases = [
   Expect<Equal<Comparator<5, 5>, Comparison.Equal>>,
   Expect<Equal<Comparator<5, 6>, Comparison.Lower>>,

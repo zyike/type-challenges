@@ -1,6 +1,6 @@
 import { Equal, Expect, ExpectFalse, NotEqual } from '@type-challenges/utils'
 
-type RequiredByKeys<T , K> = any
+type RequiredByKeys<T, K> = any
 
 interface User {
   name?: string
@@ -11,13 +11,13 @@ interface User {
 interface UserRequiredName {
   name: string
   age?: number
-  address?: string 
+  address?: string
 }
 
 interface UserRequiredNameAndAge {
   name: string
   age: number
-  address?: string 
+  address?: string
 }
 
 type cases = [

@@ -1,6 +1,6 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
-type CamelCase<S> = any;
+type CamelCase<S> = any
 
 type cases = [
   Expect<Equal<CamelCase<'foo-bar-baz'>, 'fooBarBaz'>>,

@@ -1,6 +1,6 @@
 import { Equal, Expect, ExpectFalse, NotEqual } from '@type-challenges/utils'
 
-type PartialByKeys<T , K> = any
+type PartialByKeys<T, K> = any
 
 interface User {
   name: string
@@ -11,13 +11,13 @@ interface User {
 interface UserPartialName {
   name?: string
   age: number
-  address: string 
+  address: string
 }
 
 interface UserPartialNameAndAge {
   name?: string
   age?: number
-  address: string 
+  address: string
 }
 
 type cases = [

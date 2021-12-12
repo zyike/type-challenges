@@ -3,23 +3,23 @@ import { Equal, Expect } from '@type-challenges/utils'
 type DeepPick = any
 
 type Obj = {
-  a: number,
-  b: string,
-  c:  boolean,
+  a: number
+  b: string
+  c: boolean
   obj: {
-    d: number,
-    e: string,
-    f:  boolean,
+    d: number
+    e: string
+    f: boolean
     obj2: {
-      g: number,
-      h: string,
-      i: boolean,
+      g: number
+      h: string
+      i: boolean
     }
-  },
+  }
   obj3: {
-    j: number,
-    k: string,
-    l: boolean,
+    j: number
+    k: string
+    l: boolean
   }
 }
 

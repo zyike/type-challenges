@@ -1,7 +1,6 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
 type Diff<O, O1> = any
-
 type Foo = {
   name: string
   age: string
@@ -14,5 +13,5 @@ type Bar = {
 
 type cases = [
   Expect<Equal<Diff<Foo, Bar>, { gender: number }>>,
-  Expect<Equal<Diff<Bar,Foo>, { gender: number }>>
+  Expect<Equal<Diff<Bar, Foo>, { gender: number }>>
 ]

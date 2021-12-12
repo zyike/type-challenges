@@ -1,9 +1,9 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
-type DropChar<S, C> = any;
+type DropChar<S, C> = any
 
 type cases = [
-  // @ts-expect-error
+  
   Expect<Equal<DropChar<'butter fly!', ''>, 'butterfly!'>>,
   Expect<Equal<DropChar<'butter fly!', ' '>, 'butterfly!'>>,
   Expect<Equal<DropChar<'butter fly!', '!'>, 'butter fly'>>,

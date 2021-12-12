@@ -3,12 +3,12 @@ import { Equal, Expect, NotEqual, IsAny, ExpectFalse, Alike } from './index'
 type cases = [
   /* Expect */
   Expect<true>,
-  // @ts-expect-error
+  
   Expect<false>,
 
   /* ExpectFalse */
   ExpectFalse<false>,
-  // @ts-expect-error
+  
   ExpectFalse<true>,
 
   /* Equal */

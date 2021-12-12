@@ -61,7 +61,7 @@ let sum = 0;
 for (let i = 0 as Index<typeof matrix>; i < matrix.length; i += 1) {
     const columns: number[] = matrix[i];
 
-    // @ts-expect-error: number | undefined in not assignable to number
+    : number | undefined in not assignable to number
     const x: number[] = matrix[0];
 
     assertArrayIndex(columns, 'columns');
@@ -69,13 +69,13 @@ for (let i = 0 as Index<typeof matrix>; i < matrix.length; i += 1) {
     for (let j = 0 as Index<typeof columns>; j < columns.length; j += 1) {
         sum += columns[j];
 
-        // @ts-expect-error: number | undefined in not assignable to number
+        : number | undefined in not assignable to number
         const y: number = columns[i];
 
-        // @ts-expect-error: number | undefined in not assignable to number
+        : number | undefined in not assignable to number
         const z: number = columns[0];
 
-        // @ts-expect-error: number[] | undefined in not assignable to number[]
+        : number[] | undefined in not assignable to number[]
         const u: number[] = matrix[j];
     }
 }
@@ -85,7 +85,7 @@ The `assertArrayIndex` function cannot be called on tuples (since the accessing 
 ```ts
 const tuple = [5, 7] as const;
 
-// @ts-expect-error
+
 assertArrayIndex(tuple, 'tuple');
 ```
 

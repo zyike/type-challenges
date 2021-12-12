@@ -3,14 +3,13 @@ import { Equal, Expect } from '@type-challenges/utils'
 
 declare function SimpleVue(options: any): any
 
-
 SimpleVue({
   data() {
-    // @ts-expect-error
+    
     this.firstname
-    // @ts-expect-error
+    
     this.getRandom()
-    // @ts-expect-error
+    
     this.data()
 
     return {
